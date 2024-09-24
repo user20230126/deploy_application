@@ -11,7 +11,7 @@ RUN apt update
 RUN apt -y install vim
 
 # 3. ubuntuの日本語対応
-RUN apt -y install language-pack-ja
+RUN apt-get -y install language-pack-ja
 RUN update-locale LANG=ja_JP.utf8
 ENV LANG ja_JP.utf8
 
